@@ -6,7 +6,7 @@ import getSizes from "@/actions/get-sizes";
 import BillBoard from "@/components/BillBoard";
 import Container from "@/components/ui/container";
 import React from "react";
-import Filter from "./components/Filter";
+import Filter from "../../../../components/Filter";
 import NoResult from "@/components/ui/no-result";
 import ProductCard from "@/components/ui/ProductCard";
 import MobileFilters from "@/components/MobileFilters";
