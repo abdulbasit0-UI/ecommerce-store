@@ -7,6 +7,7 @@ export interface Billboard {
 export interface Category {
   id: string;
   name: string;
+  imageUrl: string;
   billboard: Billboard;
 }
 

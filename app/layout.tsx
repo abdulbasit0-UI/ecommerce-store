@@ -9,8 +9,9 @@ import ToastProvider from "@/providers/toastProvider";
 const font = Urbanist({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Store",
-  description: "Clothing store",
+  title: "Umartech - Your one stop computer shop",
+  description:
+    "Umartech is a computer store based in Durban, South Africa, specialized in computers and laptops for more than 20 years",
 };
 
 export default function RootLayout({
