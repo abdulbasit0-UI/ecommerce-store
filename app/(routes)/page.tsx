@@ -47,7 +47,7 @@ const HomePage = async () => {
         <div className="grid grid-cols-2 lg:grid-cols-5">
           {getCategorie.map((cat) => {
             return (
-              <div className="flex flex-col items-center">
+              <div key={cat.id} className="flex flex-col items-center">
                 <div
                   className="h-28 w-28 bg-cover  rounded-full border"
                   style={{ backgroundImage: `url(${cat.imageUrl})` }}
