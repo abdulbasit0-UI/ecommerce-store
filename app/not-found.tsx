@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+export const revalidate = 0;
+
 export default function NotFound() {
   return (
     <div className="flex flex-col w-full h-[100%] items-center justify-center">
