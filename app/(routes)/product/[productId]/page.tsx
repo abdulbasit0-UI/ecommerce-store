@@ -4,7 +4,7 @@ import Gallery from "@/components/Gallery";
 import Info from "@/components/Info";
 import ProductList from "@/components/ProductList";
 import Container from "@/components/ui/container";
-import { Metadata, ResolvedMetadata } from "next";
+import { Metadata, ResolvedMetadata, ResolvingMetadata } from "next";
 import React from "react";
 
 interface ProductPageProps {
@@ -16,7 +16,7 @@ interface ProductPageProps {
 
 export async function generateMetadata(
   { params, searchParams }: ProductPageProps,
-  parent: ResolvedMetadata
+  parent: ResolvingMetadata
 ): Promise<Metadata> {
   const id = params.productId;
 
