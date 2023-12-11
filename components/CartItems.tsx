@@ -14,6 +14,11 @@ interface CartItemsProps {
   data: Product;
 }
 
+
+
+
+
+
 const CartItems: React.FC<CartItemsProps> = ({ data }) => {
   const cart = useCart();
 
