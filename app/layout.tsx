@@ -1,12 +1,19 @@
 import type { Metadata } from "next";
-import { Urbanist } from "next/font/google";
+import { Monoton, Josefin_Sans } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import ModalProvider from "@/providers/provider";
 import ToastProvider from "@/providers/toastProvider";
 
-const font = Urbanist({ subsets: ["latin"] });
+export const font = Monoton({
+  subsets: ["latin"],
+  weight: "400"
+});
+
+export const josefin_Sans = Josefin_Sans({
+  subsets: ['latin']
+})
 
 export const metadata: Metadata = {
   title: "Umartech - Your one stop computer shop",
@@ -21,7 +28,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={font.className}>
+      <body className={josefin_Sans.className}>
         <ModalProvider />
         <ToastProvider />
         <Navbar />

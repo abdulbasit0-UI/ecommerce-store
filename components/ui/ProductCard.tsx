@@ -61,7 +61,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ data }) => {
         </div>
       </div>
       <div>
-        <p className="font-semibold text-lg">{data.name}</p>
+        <p className="font-semibold text-lg">{data.name.slice(0, 40)} ...</p>
         <p className="text-sm text-gray-500">{data.category.name}</p>
       </div>
       <div className="flex items-center justify-between">
